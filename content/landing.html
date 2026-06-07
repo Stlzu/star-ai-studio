@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation Agency — Built 10x Faster with AI Agents</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: #1e1e30;
+    --text: #e4e4ed;
+    --text-dim: #8888a0;
+    --accent: #6c5ce7;
+    --accent-light: #a29bfe;
+    --green: #00b894;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  
+  /* Hero */
+  .hero {
+    padding: 100px 0 60px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(108,92,231,0.08) 0%, transparent 100%);
+  }
+  .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.02em; }
+  .hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 640px; margin: 0 auto 32px; }
+  .hero .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+  }
+  .hero .cta:hover { background: var(--accent-light); transform: translateY(-2px); }
+
+  /* Stats */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .stat h2 { font-size: 2.5rem; font-weight: 800; color: var(--accent); }
+  .stat p { color: var(--text-dim); font-size: 0.9rem; }
+
+  /* Services */
+  .services { padding: 60px 0; }
+  .services h2 { font-size: 2rem; margin-bottom: 40px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+  .card h3 .emoji { margin-right: 8px; }
+  .card p { color: var(--text-dim); margin-bottom: 12px; }
+  .card .price { color: var(--green); font-weight: 700; font-size: 1.1rem; }
+  .card ul { list-style: none; padding: 0; }
+  .card ul li::before { content: "✓ "; color: var(--green); }
+  .card ul li { color: var(--text-dim); margin-bottom: 4px; }
+
+  /* Process */
+  .process { padding: 60px 0; }
+  .process h2 { font-size: 2rem; margin-bottom: 40px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step { text-align: center; }
+  .step .number {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--accent); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 1.2rem;
+    margin: 0 auto 16px;
+  }
+  .step h4 { margin-bottom: 8px; }
+  .step p { color: var(--text-dim); font-size: 0.9rem; }
+
+  /* Why */
+  .why { padding: 60px 0; }
+  .why h2 { font-size: 2rem; margin-bottom: 24px; }
+  .why ul { list-style: none; }
+  .why ul li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .why ul li strong { color: var(--accent-light); }
+
+  /* Footer */
+  footer { padding: 40px 0; text-align: center; color: var(--text-dim); font-size: 0.9rem; }
+  footer a { color: var(--accent-light); text-decoration: none; }
+
+  @media (max-width: 768px) {
+    .stats { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <h1>Build Software <span>10x Faster</span> with AI Agents</h1>
+    <p>We use AI agents to design, build, and deploy custom software in days — not months. MVPs, internal tools, automations, and full-stack applications at a fraction of traditional cost.</p>
+    <a href="mailto:hello@example.com" class="cta">Get a Free Quote →</a>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    <div class="stat"><h2>10x</h2><p>Faster delivery vs traditional agencies</p></div>
+    <div class="stat"><h2>1/5</h2><p>Cost of equivalent agency work</p></div>
+    <div class="stat"><h2>5 days</h2><p>Average project delivery time</p></div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <h2>What We Build</h2>
+
+    <div class="card">
+      <h3><span class="emoji">📝</span> Automated Content Systems</h3>
+      <p>AI-powered content engines that research, write, and publish SEO-optimized blog posts automatically.</p>
+      <ul>
+        <li>Web research + content generation pipeline</li>
+        <li>SEO-optimized with proper keywords and structure</li>
+        <li>Auto-publishes to your CMS or static site</li>
+        <li>Customizable tone, length, and format</li>
+      </ul>
+      <p class="price">From $2,500 setup + $500/mo</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="emoji">🏢</span> Lead Enrichment & Sales Tools</h3>
+      <p>Automate lead research and CRM enrichment with AI agents that research companies and contacts at scale.</p>
+      <ul>
+        <li>Enrich thousands of leads with company data</li>
+        <li>CRM integration (HubSpot, Salesforce, etc.)</li>
+        <li>Custom enrichment fields and scoring</li>
+        <li>Scheduled enrichment runs</li>
+      </ul>
+      <p class="price">From $3,000 setup + $400/mo</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="emoji">📄</span> Document Processing & Data Extraction</h3>
+      <p>Extract structured data from invoices, receipts, contracts, and any business document.</p>
+      <ul>
+        <li>PDF and image processing pipeline</li>
+        <li>Custom extraction fields and validation</li>
+        <li>Export to CSV, JSON, or direct to accounting software</li>
+        <li>Batch processing for high volumes</li>
+      </ul>
+      <p class="price">From $2,000 setup + $300/mo</p>
+    </div>
+
+    <div class="card">
+      <h3><span class="emoji">⚡</span> Custom Automation Pipelines</h3>
+      <p>Any repetitive business process can be automated with AI agents. Web scraping, data processing, report generation, email automation, and more.</p>
+      <ul>
+        <li>Custom workflow design and development</li>
+        <li>API integrations with your existing tools</li>
+        <li>Cron-based scheduling</li>
+        <li>Monitoring and alerts</li>
+      </ul>
+      <p class="price">Custom quote — typically $2k–$15k</p>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="number">1</div>
+        <h4>Discovery Call</h4>
+        <p>30 minutes to understand your process, pain points, and goals.</p>
+      </div>
+      <div class="step">
+        <div class="number">2</div>
+        <h4>Build & Deploy</h4>
+        <p>We build your solution using AI agents — typically 2-7 days.</p>
+      </div>
+      <div class="step">
+        <div class="number">3</div>
+        <h4>Review & Iterate</h4>
+        <p>You test, we refine. Then it runs autonomously. Ongoing support included.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <h2>Why Work With Us?</h2>
+    <ul>
+      <li><strong>10x faster</strong> — AI agents build in days what takes traditional agencies months</li>
+      <li><strong>1/5 the cost</strong> — No bloated agency overhead, no account managers, just results</li>
+      <li><strong>No lock-in</strong> — You own the code and the system. We use open-source tools.</li>
+      <li><strong>Proven technology</strong> — Built on Hermes Agent, the open-source AI agent framework by Nous Research</li>
+      <li><strong>Iterative refinement</strong> — We don't deliver and disappear. Monthly retainer includes updates and tuning.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Built with <a href="https://hermes-agent.nousresearch.com">Hermes Agent</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
