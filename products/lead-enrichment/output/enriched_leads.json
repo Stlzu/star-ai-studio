@@ -1,0 +1,35 @@
+[
+  {
+    "company_name": "Nous Research",
+    "website": "https://www.rootdata.com",
+    "description": "Nous Research is a decentralized AI gas pedal company and research institute dedicated to developing AI models and tools, with a focus on deeply integrating",
+    "industry": "AI/Machine Learning",
+    "headquarters": "",
+    "estimated_size": "",
+    "linkedin": "https://www.linkedin.com/company/nousresearch",
+    "founded": "",
+    "enriched_at": "2026-06-07T21:28:32.580097"
+  },
+  {
+    "company_name": "Anthropic",
+    "website": "https://www.trueup.io",
+    "description": "Anthropic is an artificial intelligence company that develops large language models and AI systems for business and research use.",
+    "industry": "AI/Machine Learning",
+    "headquarters": "",
+    "estimated_size": "",
+    "linkedin": "",
+    "founded": "",
+    "enriched_at": "2026-06-07T21:28:37.798707"
+  },
+  {
+    "company_name": "Hugging Face",
+    "website": "https://www.ibm.com",
+    "description": "Hugging Face\u00a0 is a company that maintains a huge open-source community of the same name that builds tools, machine learning models and platforms for working with artificial intelligence, with a focus ",
+    "industry": "AI/Machine Learning",
+    "headquarters": "",
+    "estimated_size": "",
+    "linkedin": "",
+    "founded": "",
+    "enriched_at": "2026-06-07T21:28:42.640286"
+  }
+]

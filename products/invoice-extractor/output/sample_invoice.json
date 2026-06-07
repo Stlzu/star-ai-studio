@@ -1,0 +1,37 @@
+[
+  {
+    "invoice_number": "INV-2025-0042",
+    "invoice_date": "2025-06-15",
+    "due_date": "2025-07-15",
+    "vendor_name": "CloudTech Solutions Inc.",
+    "vendor_address": "",
+    "vendor_email": "billing@cloudtech.io",
+    "vendor_phone": "(415) 555-0198",
+    "customer_name": "Acme Corporation",
+    "customer_address": "",
+    "subtotal": "10,500.00",
+    "tax": "8.5%",
+    "total": "11392.50",
+    "currency": "USD",
+    "line_items": [
+      {
+        "description": "Website Development",
+        "amount": "5,000.00"
+      },
+      {
+        "description": "UI/UX Design",
+        "amount": "3,500.00"
+      },
+      {
+        "description": "Server Setup & Configuration",
+        "amount": "1,200.00"
+      },
+      {
+        "description": "Monthly Maintenance",
+        "amount": "800.00"
+      }
+    ],
+    "notes": "Notes: Thank you for your business! Please include invoice number with payment.",
+    "raw_text_length": 692
+  }
+]

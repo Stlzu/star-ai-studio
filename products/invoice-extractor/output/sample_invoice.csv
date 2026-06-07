@@ -1,0 +1,5 @@
+invoice_number,invoice_date,due_date,vendor_name,vendor_address,vendor_email,vendor_phone,customer_name,customer_address,subtotal,tax,total,currency,notes,raw_text_length,item_description,item_amount
+Invoice,2025-06-15,,,,billing@cloudtech.io,(415) 555-0198,Acme Corporation,,"10,500.00",,"10,500.00",USD,Notes: Thank you for your business! Please include invoice number with payment.,692,Website Development,"5,000.00"
+Invoice,2025-06-15,,,,billing@cloudtech.io,(415) 555-0198,Acme Corporation,,"10,500.00",,"10,500.00",USD,Notes: Thank you for your business! Please include invoice number with payment.,692,UI/UX Design,"3,500.00"
+Invoice,2025-06-15,,,,billing@cloudtech.io,(415) 555-0198,Acme Corporation,,"10,500.00",,"10,500.00",USD,Notes: Thank you for your business! Please include invoice number with payment.,692,Server Setup & Configuration,"1,200.00"
+Invoice,2025-06-15,,,,billing@cloudtech.io,(415) 555-0198,Acme Corporation,,"10,500.00",,"10,500.00",USD,Notes: Thank you for your business! Please include invoice number with payment.,692,Monthly Maintenance,800.00
