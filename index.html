@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Automation Agency — Built 10x Faster with AI Agents</title>
+<title>AI Automation Agency — Build Software 10x Faster with AI Agents</title>
 <style>
   :root {
     --bg: #0a0a0f;
@@ -14,6 +14,7 @@
     --accent: #6c5ce7;
     --accent-light: #a29bfe;
     --green: #00b894;
+    --orange: #fdcb6e;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -23,17 +24,17 @@
     line-height: 1.6;
   }
   .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
-  
+
   /* Hero */
   .hero {
     padding: 100px 0 60px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(108,92,231,0.08) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(108,92,231,0.12) 0%, transparent 100%);
   }
   .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.02em; }
   .hero h1 span { background: linear-gradient(135deg, var(--accent), var(--accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 640px; margin: 0 auto 32px; }
-  .hero .cta {
+  .hero .cta, .btn-primary {
     display: inline-block;
     background: var(--accent);
     color: white;
@@ -44,7 +45,19 @@
     font-size: 1.1rem;
     transition: all 0.2s;
   }
-  .hero .cta:hover { background: var(--accent-light); transform: translateY(-2px); }
+  .hero .cta:hover, .btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); }
+
+  /* Section headings */
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  section h2 .highlight {
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   /* Stats */
   .stats {
@@ -54,33 +67,86 @@
     padding: 60px 0;
     text-align: center;
   }
-  .stat h2 { font-size: 2.5rem; font-weight: 800; color: var(--accent); }
+  .stat h2 { font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0; }
   .stat p { color: var(--text-dim); font-size: 0.9rem; }
 
-  /* Services */
-  .services { padding: 60px 0; }
-  .services h2 { font-size: 2rem; margin-bottom: 40px; }
+  /* Cards (Services & Pricing) */
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 32px;
-    margin-bottom: 20px;
-    transition: border-color 0.2s;
+    margin-bottom: 24px;
+    transition: border-color 0.2s, transform 0.2s;
   }
-  .card:hover { border-color: var(--accent); }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
   .card h3 { font-size: 1.3rem; margin-bottom: 8px; }
-  .card h3 .emoji { margin-right: 8px; }
+  .card .emoji { margin-right: 8px; }
   .card p { color: var(--text-dim); margin-bottom: 12px; }
   .card .price { color: var(--green); font-weight: 700; font-size: 1.1rem; }
   .card ul { list-style: none; padding: 0; }
   .card ul li::before { content: "✓ "; color: var(--green); }
-  .card ul li { color: var(--text-dim); margin-bottom: 4px; }
+  .card ul li { color: var(--text-dim); margin-bottom: 6px; }
+  .card .card-cta {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--accent-light);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .card .card-cta:hover { text-decoration: underline; }
 
-  /* Process */
+  /* 2-column grid for service cards */
+  .service-grid, .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .pricing-grid .card {
+    text-align: center;
+    padding: 40px 24px;
+    position: relative;
+  }
+  .pricing-grid .card.featured {
+    border-color: var(--accent);
+    border-width: 2px;
+    transform: scale(1.03);
+  }
+  .pricing-grid .card.featured:hover {
+    transform: scale(1.03) translateY(-2px);
+  }
+  .pricing-grid .card .price-amount {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 16px 0 8px;
+  }
+  .pricing-grid .card .price-desc {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+  .pricing-grid .card ul {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .pricing-grid .card .popular-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* Process / How We Work */
   .process { padding: 60px 0; }
-  .process h2 { font-size: 2rem; margin-bottom: 40px; }
-  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .process h2 { margin-bottom: 48px; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .step { text-align: center; }
   .step .number {
     width: 48px; height: 48px; border-radius: 50%;
@@ -92,34 +158,167 @@
   .step h4 { margin-bottom: 8px; }
   .step p { color: var(--text-dim); font-size: 0.9rem; }
 
-  /* Why */
+  /* Why / Benefits */
   .why { padding: 60px 0; }
-  .why h2 { font-size: 2rem; margin-bottom: 24px; }
-  .why ul { list-style: none; }
-  .why ul li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .why h2 { margin-bottom: 32px; }
+  .why ul { list-style: none; max-width: 700px; margin: 0 auto; }
+  .why ul li { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .why ul li:last-child { border-bottom: none; }
   .why ul li strong { color: var(--accent-light); }
+
+  /* Testimonials Placeholder */
+  .testimonials {
+    padding: 60px 0;
+    background: var(--surface);
+    text-align: center;
+  }
+  .testimonials .placeholder-box {
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    padding: 60px 40px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .testimonials .placeholder-box p {
+    color: var(--text-dim);
+    font-size: 1rem;
+  }
+  .testimonials .placeholder-box .coming-soon {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, transparent 0%, rgba(108,92,231,0.08) 100%);
+  }
+  .cta-section h2 { font-size: 2.2rem; margin-bottom: 12px; }
+  .cta-section p { color: var(--text-dim); max-width: 560px; margin: 0 auto 32px; font-size: 1.1rem; }
+  .cta-section .cta-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .cta-section .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--accent-light);
+    border: 2px solid var(--accent);
+    padding: 14px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+  }
+  .cta-section .btn-secondary:hover {
+    background: rgba(108,92,231,0.12);
+    transform: translateY(-2px);
+  }
+
+  /* Contact Form Section */
+  .contact {
+    padding: 60px 0;
+    background: var(--surface);
+  }
+  .contact h2 { margin-bottom: 32px; }
+  .contact-form {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .contact-form .form-group {
+    margin-bottom: 18px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .contact-form textarea { min-height: 120px; resize: vertical; }
+  .contact-form button {
+    display: inline-block;
+    width: 100%;
+    background: var(--accent);
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .contact-form button:hover { background: var(--accent-light); transform: translateY(-2px); }
+  .contact .email-note {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-top: 16px;
+  }
+  .contact .email-note a { color: var(--accent-light); }
 
   /* Footer */
   footer { padding: 40px 0; text-align: center; color: var(--text-dim); font-size: 0.9rem; }
   footer a { color: var(--accent-light); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
 
   @media (max-width: 768px) {
-    .stats { grid-template-columns: 1fr; }
-    .steps { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1rem; }
+    .stats { grid-template-columns: 1fr; gap: 32px; }
+    .service-grid, .pricing-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .cta-section .cta-group { flex-direction: column; align-items: center; }
+    .pricing-grid .card.featured { transform: none; }
+    .pricing-grid .card.featured:hover { transform: translateY(-2px); }
+  }
+
+  @media (max-width: 480px) {
+    .steps { grid-template-columns: 1fr; }
+    .hero { padding: 60px 0 40px; }
+    .hero .cta, .btn-primary, .cta-section .btn-secondary { width: 100%; text-align: center; }
+    section h2 { font-size: 1.6rem; }
   }
 </style>
 </head>
 <body>
 
+<!-- Hero -->
 <section class="hero">
   <div class="container">
     <h1>Build Software <span>10x Faster</span> with AI Agents</h1>
     <p>We use AI agents to design, build, and deploy custom software in days — not months. MVPs, internal tools, automations, and full-stack applications at a fraction of traditional cost.</p>
-    <a href="mailto:Dstarlight851@gmail.com" class="cta">Get a Free Quote →</a>
+    <a href="mailto:Dstarlight851@gmail.com?subject=Discovery%20Call%20Request" class="cta">Book a Free Discovery Call →</a>
   </div>
 </section>
 
+<!-- Stats -->
 <section class="stats">
   <div class="container" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
     <div class="stat"><h2>10x</h2><p>Faster delivery vs traditional agencies</p></div>
@@ -128,99 +327,211 @@
   </div>
 </section>
 
-<section class="services">
+<!-- Services -->
+<section class="services" style="padding: 60px 0;">
   <div class="container">
-    <h2>What We Build</h2>
-
-    <div class="card">
-      <h3><span class="emoji">📝</span> Automated Content Systems</h3>
-      <p>AI-powered content engines that research, write, and publish SEO-optimized blog posts automatically.</p>
-      <ul>
-        <li>Web research + content generation pipeline</li>
-        <li>SEO-optimized with proper keywords and structure</li>
-        <li>Auto-publishes to your CMS or static site</li>
-        <li>Customizable tone, length, and format</li>
-      </ul>
-      <p class="price">From $2,500 setup + $500/mo</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="emoji">🏢</span> Lead Enrichment & Sales Tools</h3>
-      <p>Automate lead research and CRM enrichment with AI agents that research companies and contacts at scale.</p>
-      <ul>
-        <li>Enrich thousands of leads with company data</li>
-        <li>CRM integration (HubSpot, Salesforce, etc.)</li>
-        <li>Custom enrichment fields and scoring</li>
-        <li>Scheduled enrichment runs</li>
-      </ul>
-      <p class="price">From $3,000 setup + $400/mo</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="emoji">📄</span> Document Processing & Data Extraction</h3>
-      <p>Extract structured data from invoices, receipts, contracts, and any business document.</p>
-      <ul>
-        <li>PDF and image processing pipeline</li>
-        <li>Custom extraction fields and validation</li>
-        <li>Export to CSV, JSON, or direct to accounting software</li>
-        <li>Batch processing for high volumes</li>
-      </ul>
-      <p class="price">From $2,000 setup + $300/mo</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="emoji">⚡</span> Custom Automation Pipelines</h3>
-      <p>Any repetitive business process can be automated with AI agents. Web scraping, data processing, report generation, email automation, and more.</p>
-      <ul>
-        <li>Custom workflow design and development</li>
-        <li>API integrations with your existing tools</li>
-        <li>Cron-based scheduling</li>
-        <li>Monitoring and alerts</li>
-      </ul>
-      <p class="price">Custom quote — typically $2k–$15k</p>
+    <h2>Our <span class="highlight">Services</span></h2>
+    <p style="text-align: center; color: var(--text-dim); max-width: 600px; margin: -24px auto 40px;">Three proven automation solutions to grow your business — delivered in days, not months.</p>
+    <div class="service-grid">
+      <div class="card">
+        <h3><span class="emoji">📝</span> Content Automation</h3>
+        <p>AI-powered content engines that research, write, and publish SEO-optimized blog posts, social media, and newsletters automatically.</p>
+        <ul>
+          <li>Web research + content generation pipeline</li>
+          <li>SEO-optimized with proper keywords and structure</li>
+          <li>Auto-publishes to your CMS or static site</li>
+          <li>Customizable tone, length, and format</li>
+        </ul>
+        <p class="price">From $2,500 setup + $500/mo</p>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Content%20Automation%20Inquiry" class="card-cta">Get Started →</a>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">🏢</span> Lead Enrichment & Sales Tools</h3>
+        <p>Automate lead research and CRM enrichment with AI agents that research companies and contacts at scale.</p>
+        <ul>
+          <li>Enrich thousands of leads with company data</li>
+          <li>CRM integration (HubSpot, Salesforce, etc.)</li>
+          <li>Custom enrichment fields and scoring</li>
+          <li>Scheduled enrichment runs</li>
+        </ul>
+        <p class="price">From $3,000 setup + $400/mo</p>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Lead%20Enrichment%20Inquiry" class="card-cta">Get Started →</a>
+      </div>
+      <div class="card">
+        <h3><span class="emoji">📄</span> Document Processing</h3>
+        <p>Extract structured data from invoices, receipts, contracts, and any business document using AI-powered pipelines.</p>
+        <ul>
+          <li>PDF and image processing pipeline</li>
+          <li>Custom extraction fields and validation</li>
+          <li>Export to CSV, JSON, or accounting software</li>
+          <li>Batch processing for high volumes</li>
+        </ul>
+        <p class="price">From $2,000 setup + $300/mo</p>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Document%20Processing%20Inquiry" class="card-cta">Get Started →</a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Pricing -->
+<section style="padding: 60px 0; background: var(--surface);">
+  <div class="container">
+    <h2>Simple <span class="highlight">Pricing</span></h2>
+    <p style="text-align: center; color: var(--text-dim); max-width: 600px; margin: -24px auto 40px;">Flat-rate pricing with no hidden fees. Every plan includes onboarding, support, and ongoing refinements.</p>
+    <div class="pricing-grid">
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price-amount">$2,500</div>
+        <div class="price-desc">one-time setup + $300/mo</div>
+        <ul>
+          <li>1 automation workflow</li>
+          <li>Single data source / integration</li>
+          <li>Basic monitoring & alerts</li>
+          <li>Monthly check-in & tuning</li>
+          <li>Email support (48h response)</li>
+        </ul>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Starter%20Plan%20Inquiry" class="btn-primary" style="font-size: 0.95rem; padding: 12px 28px;">Get Started</a>
+      </div>
+      <div class="card featured">
+        <div class="popular-badge">Most Popular</div>
+        <h3>Growth</h3>
+        <div class="price-amount">$5,000</div>
+        <div class="price-desc">one-time setup + $500/mo</div>
+        <ul>
+          <li>Up to 3 automation workflows</li>
+          <li>Multi-source data integration</li>
+          <li>CRM & API integrations</li>
+          <li>Priority support (24h response)</li>
+          <li>Weekly performance reviews</li>
+          <li>Custom dashboards & reporting</li>
+        </ul>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Growth%20Plan%20Inquiry" class="btn-primary" style="font-size: 0.95rem; padding: 12px 28px;">Get Started</a>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <div class="price-amount">Custom</div>
+        <div class="price-desc">tailored to your needs</div>
+        <ul>
+          <li>Unlimited automation workflows</li>
+          <li>Full-stack custom applications</li>
+          <li>Dedicated account manager</li>
+          <li>Same-day priority support</li>
+          <li>Custom SLAs & uptime guarantees</li>
+          <li>On-premise deployment options</li>
+        </ul>
+        <a href="mailto:Dstarlight851@gmail.com?subject=Enterprise%20Plan%20Inquiry" class="btn-primary" style="font-size: 0.95rem; padding: 12px 28px;">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How We Work -->
 <section class="process">
   <div class="container">
-    <h2>How It Works</h2>
+    <h2>How We <span class="highlight">Work</span></h2>
     <div class="steps">
       <div class="step">
         <div class="number">1</div>
         <h4>Discovery Call</h4>
-        <p>30 minutes to understand your process, pain points, and goals.</p>
+        <p>30 minutes to understand your process, pain points, and goals. We map out the solution together.</p>
       </div>
       <div class="step">
         <div class="number">2</div>
-        <h4>Build & Deploy</h4>
-        <p>We build your solution using AI agents — typically 2-7 days.</p>
+        <h4>Proposal & Scope</h4>
+        <p>We send a clear, fixed-price proposal with deliverables, timeline, and milestones.</p>
       </div>
       <div class="step">
         <div class="number">3</div>
+        <h4>Build & Deploy</h4>
+        <p>We build your solution using AI agents — typically 2–7 days. You get weekly progress updates.</p>
+      </div>
+      <div class="step">
+        <div class="number">4</div>
         <h4>Review & Iterate</h4>
-        <p>You test, we refine. Then it runs autonomously. Ongoing support included.</p>
+        <p>You test, we refine. Then it runs autonomously. Monthly retainer includes ongoing support and improvements.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Testimonials Placeholder -->
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our <span class="highlight">Clients Say</span></h2>
+    <div class="placeholder-box">
+      <span class="coming-soon">Coming Soon</span>
+      <p>We're just getting started! Client testimonials and case studies will be added here as we deliver projects. <strong>Be one of our first success stories.</strong></p>
+      <br>
+      <a href="mailto:Dstarlight851@gmail.com?subject=Discovery%20Call%20Request" class="btn-primary" style="font-size: 0.95rem; padding: 12px 28px;">Book a Free Discovery Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
 <section class="why">
   <div class="container">
-    <h2>Why Work With Us?</h2>
+    <h2>Why Work With <span class="highlight">Us?</span></h2>
     <ul>
       <li><strong>10x faster</strong> — AI agents build in days what takes traditional agencies months</li>
       <li><strong>1/5 the cost</strong> — No bloated agency overhead, no account managers, just results</li>
       <li><strong>No lock-in</strong> — You own the code and the system. We use open-source tools.</li>
-      <li><strong>Proven technology</strong> — Built on an open-source AI agent framework</li>
+      <li><strong>Proven technology</strong> — Built on the latest AI agent frameworks</li>
       <li><strong>Iterative refinement</strong> — We don't deliver and disappear. Monthly retainer includes updates and tuning.</li>
+      <li><strong>Risk-free start</strong> — Free discovery call to scope your project with zero obligation</li>
     </ul>
   </div>
 </section>
 
+<!-- Final CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Build <span class="highlight">10x Faster?</span></h2>
+    <p>Book a free, no-obligation discovery call. We'll discuss your project, map out a solution, and give you a fixed-price quote.</p>
+    <div class="cta-group">
+      <a href="mailto:Dstarlight851@gmail.com?subject=Discovery%20Call%20Request" class="btn-primary">Book a Free Discovery Call</a>
+      <a href="mailto:Dstarlight851@gmail.com?subject=General%20Inquiry" class="btn-secondary">Send Us an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact">
+  <div class="container">
+    <h2>Get in <span class="highlight">Touch</span></h2>
+    <form class="contact-form" action="mailto:Dstarlight851@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="Name" placeholder="John Doe" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="Email" placeholder="john@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" name="Service">
+          <option value="">Select a service...</option>
+          <option value="Content Automation">Content Automation</option>
+          <option value="Lead Enrichment">Lead Enrichment & Sales Tools</option>
+          <option value="Document Processing">Document Processing</option>
+          <option value="Custom Automation">Custom Automation Pipeline</option>
+          <option value="Not Sure">Not sure yet — need advice</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell Us About Your Project</label>
+        <textarea id="message" name="Message" placeholder="Describe what you'd like to automate or build..." required></textarea>
+      </div>
+      <button type="submit">Send Message →</button>
+    </form>
+    <p class="email-note">Prefer email? <a href="mailto:Dstarlight851@gmail.com">Dstarlight851@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
   <div class="container">
-    <p>Built with <a href="https://github.com/Stlzu/star-ai-studio">open-source AI tools</a> · <a href="mailto:Dstarlight851@gmail.com">Dstarlight851@gmail.com</a></p>
+    <p>Built with open-source AI tools · <a href="mailto:Dstarlight851@gmail.com">Dstarlight851@gmail.com</a></p>
   </div>
 </footer>
 
