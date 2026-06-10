@@ -62,6 +62,6 @@ Built with Python 3, uses web search and content generation automation.
 | File | Description |
 |------|-------------|
 | `blog_engine_workflow.py` | AI-native version (runs in execute_code) |
-| `blog_engine_hermes.py` | Universal version (hermes_tools or fallback) |
+| `blog_engine_hermes.py` | Universal version (automation tools or fallback) |
 | `blog_engine.py` | Standalone Python version (requests-based) |
 | `output/` | Generated blog posts and research data |

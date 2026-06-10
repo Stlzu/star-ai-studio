@@ -22,7 +22,7 @@
 │   ├── blog-engine/             # Product #1
 │   │   ├── blog_engine.py
 │   │   ├── blog_engine_workflow.py
-│   │   ├── blog_engine_hermes.py
+│   │   ├── blog_engine.py           # Main engine (3 variants)
 │   │   ├── README.md
 │   │   └── output/
 │   ├── lead-enrichment/         # Product #2
