@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Lead Enrichment Tool — Hermes Workflow
+Lead Enrichment Tool — AI-Powered Workflow
 =======================================
 Enrich company lists with web-researched data for CRM import.
 
@@ -22,9 +22,9 @@ from pathlib import Path
 from typing import Optional
 
 
-# Try Hermes tools
+# Try automation tools
 def search_company(name: str) -> list[dict]:
-    """Search for company information using Hermes web_search."""
+    """Search for company information using web_search."""
     try:
         from hermes_tools import web_search
         results = []
@@ -49,7 +49,7 @@ def search_company(name: str) -> list[dict]:
 
 
 def extract_info(url: str) -> Optional[str]:
-    """Extract page content via Hermes web_extract."""
+    """Extract page content via web_extract."""
     try:
         from hermes_tools import web_extract
         result = web_extract(urls=[url])

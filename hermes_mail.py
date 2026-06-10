@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hermes Email Manager — Gmail via IMAP/SMTP
+Email Manager — Gmail via IMAP/SMTP
 ===========================================
 Read, search, reply, and manage client emails.
 
@@ -452,7 +452,7 @@ def cmd_auto(config: dict, args):
 def main():
     config = load_config()
 
-    parser = argparse.ArgumentParser(description="Hermes Email Manager")
+    parser = argparse.ArgumentParser(description="Email Manager")
     parser.add_argument("--check", action="store_true", help="Check for new client inquiries")
     parser.add_argument("--list", action="store_true", help="List recent emails")
     parser.add_argument("--search", help="Search emails by keyword")

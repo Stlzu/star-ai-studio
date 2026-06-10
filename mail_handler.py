@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hermes Email Handler — for use inside execute_code
+Email Handler — for use inside execute_code
 ===================================================
 Lets me check and reply to client emails on your behalf.
 

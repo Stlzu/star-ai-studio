@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Invoice/Receipt Data Extractor — Hermes Workflow
+Invoice/Receipt Data Extractor — AI-Powered Workflow
 ==================================================
 Extract structured data from invoices and receipts automatically.
 

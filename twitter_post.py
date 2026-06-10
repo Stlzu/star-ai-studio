@@ -83,7 +83,7 @@ def post_thread(client, tweets: list[str], delay: float = 2.0):
 
 THREADS = {
     1: [
-        "I built an AI blog content engine that researches the web and writes SEO-optimized posts. In 2 hours. With Hermes Agent. Here's how. 🧵👇",
+        "I built an AI blog content engine that researches the web and writes SEO-optimized posts. In 2 hours. Using an AI automation toolkit. Here's how. 🧵👇",
         "The problem: Content marketing works but it's expensive. Agencies charge $500-2,000/post. Freelancers take 3-5 days. Most businesses can't keep up.",
         "The solution: An AI agent that does the entire content pipeline: Research → Analyze → Generate → Format → Publish. No human needed between topic and post.",
         "How it works: Give it a topic → it searches 8+ articles → extracts key insights → generates a 685+ word post with SEO frontmatter, headings, and real examples. All in 2 minutes.",
@@ -97,7 +97,7 @@ THREADS = {
         "The solution: Paste company names → the AI enriches every field automatically: website, description, industry, LinkedIn, location, size. Ready for CRM import in CSV.",
         "The demo: 3 companies (Nous Research, Anthropic, Hugging Face) → enriched in 15 seconds. Real data from web search. Consistent. Accurate. No human fatigue.",
         "The business model: $197/mo for 2,000 companies. At 50 customers = $9,850/mo MRR. 10x faster than manual research.",
-        "Built with Python + Hermes Agent. Full code: https://github.com/Stlzu/star-ai-studio\n\nWant me to enrich your lead list? DM me.",
+        "Built with Python. Full code: https://github.com/Stlzu/star-ai-studio\n\nWant me to enrich your lead list? DM me.",
     ],
     3: [
         "Accountants spend 40-80 hours/month on manual data entry. I built an AI that does it in seconds. Here's how. 🧵👇",

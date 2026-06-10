@@ -4,7 +4,7 @@
 Content marketing is the #1 channel for B2B growth, but producing consistent, high-quality blog posts is expensive and slow. Agencies charge $500-2,000 per post. Freelancers take 3-5 days.
 
 ## The Solution
-I built an **Automated SEO Blog Content Engine** using Hermes Agent. It researches topics from the web, analyzes competitor content, and generates fully-structured SEO-optimized blog posts.
+I built an **Automated SEO Blog Content Engine** using an AI agent automation toolkit. It researches topics from the web, analyzes competitor content, and generates fully-structured SEO-optimized blog posts.
 
 ## How It Works
 1. Give it a topic: "AI agents for business automation"

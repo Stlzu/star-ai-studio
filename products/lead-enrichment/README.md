@@ -1,6 +1,6 @@
 # Lead Enrichment Tool
 
-**Product #2 of The $1M Hermes Roadmap**
+**Product #2 — Automated company research for sales**
 
 Automatically enrich company lists with web-researched data — perfect for CRM imports, sales prospecting, and lead qualification.
 
@@ -19,7 +19,7 @@ Takes a list of company names → researches each one via web search → outputs
 
 ## How to Use
 
-### Via Hermes execute_code
+### Via execute_code
 ```python
 from hermes_tools import web_search, web_extract
 
@@ -59,6 +59,6 @@ python3 lead_enrichment.py --input companies.csv --output enriched.csv
 
 | File | Description |
 |------|-------------|
-| `lead_enrichment.py` | Main enrichment pipeline (Hermes-powered) |
+| `lead_enrichment.py` | Main enrichment pipeline (AI-powered) |
 | `output/enriched_leads.csv` | Sample output CSV |
 | `output/enriched_leads.json` | Sample output JSON |

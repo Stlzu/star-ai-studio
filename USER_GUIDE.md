@@ -76,7 +76,7 @@ Reply to "I need a tool that does X" posts with: "I built something similar. Hap
 1. **Create a Twitter/X account** if you don't have one — @[yourname]
 2. **Post Thread #1**: "I built an AI blog engine that researches & writes posts. Here's how." (content/twitter-threads.md)
 3. **Create a Fiverr account** — gig: "I will build custom AI automation tools for your business"
-4. **DM me** (your Hermes agent) when someone replies so I can help you craft responses
+4. **DM me** (your AI agent) when someone replies so I can help you craft responses
 
 ## What I'll Handle For You
 
@@ -93,4 +93,4 @@ I'll continue building the tech side:
 - $10K is 20 clients at $500 or 2 clients at $5K
 - $1M is a product that grows without you trading time for money
 
-You have time and Hermes. That's a dangerous combination. Let's go.
+You have time and the AI. That's a dangerous combination. Let's go.

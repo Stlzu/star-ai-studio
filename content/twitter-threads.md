@@ -1,6 +1,6 @@
 # Build 1: SEO Blog Engine 🧵
 
-1/ I built an AI blog content engine that researches the web and writes SEO-optimized posts. In 2 hours. With Hermes Agent. Here's how. 🧵👇
+1/ I built an AI blog content engine that researches the web and writes SEO-optimized posts. In 2 hours. Using an AI automation toolkit. Here's how. 🧵👇
 
 2/ The problem: Content marketing works but it's expensive. Agencies charge $500-2,000/post. Freelancers take 3-5 days. Most businesses can't keep up.
 

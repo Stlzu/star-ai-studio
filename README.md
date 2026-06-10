@@ -1,23 +1,22 @@
-# The $1M Hermes Roadmap
+# Star AI Studio — Product Suite
 
-**A venture built with Hermes Agent — 3 products, 1 mission: $1M in revenue.**
+**AI automation toolkit — 3 products, 1 mission: automate business workflows.**
 
 ## Our Products
 
-| Product | Description | Status | Est. Monthly Revenue Potential |
-|---------|-------------|--------|-------------------------------|
-| **SEO Blog Engine** | AI-powered content research & generation | ✅ Built & Demo'ed | $14,850/mo |
-| **Lead Enrichment Tool** | Automated company research for sales | ✅ Built & Demo'ed | $9,850/mo |
-| **Invoice Extractor** | Automated invoice data extraction | ✅ Built & Demo'ed | $8,910/mo |
+| Product | Description | Status | Target Market |
+|---------|-------------|--------|---------------|
+| **SEO Blog Engine** | AI-powered content research & generation | ✅ Built & Demo'ed | Marketing agencies, content teams |
+| **Lead Enrichment Tool** | Automated company research for sales | ✅ Built & Demo'ed | Sales teams, recruiters |
+| **Invoice Extractor** | Automated invoice data extraction | ✅ Built & Demo'ed | Accounting firms, bookkeepers |
 
-**Phase 1 target:** $10k in agency revenue (Month 1-3)
-**Phase 2 target:** $50k-200k in product revenue (Month 3-9)
-**Phase 3 target:** $1M ARR (Month 9-24)
+**Phase 1 target:** $10k in agency revenue
+**Phase 2 target:** $50k-200k in product revenue
+**Phase 3 target:** $1M ARR
 
 ## Directory Structure
 
 ```
-hermes-million/
 ├── README.md                    # This file
 ├── products/
 │   ├── blog-engine/             # Product #1
@@ -41,7 +40,11 @@ hermes-million/
 ## How to Run
 
 All products require Python 3 and can run via:
-1. **Hermes execute_code** (recommended — uses hermes_tools for web search)
+1. **execute_code** (recommended — uses built-in automation tools for web search)
 2. **Standalone CLI** (direct Python execution)
 
 See each product's README for detailed instructions.
+
+## About
+
+AI automation agency toolkit — 3 products for business process automation.

@@ -1,6 +1,6 @@
 # Invoice/Receipt Data Extractor
 
-**Product #3 of The $1M Hermes Roadmap**
+**Product #3 — Automated invoice data extraction**
 
 Automatically extract structured data from invoices and receipts — eliminates manual data entry for accounting.
 
@@ -32,7 +32,7 @@ python3 invoice_extractor.py --text "INVOICE #1234..."
 python3 invoice_extractor.py --demo
 ```
 
-### Via Hermes execute_code
+### Via execute_code
 ```python
 from hermes_tools import write_file
 

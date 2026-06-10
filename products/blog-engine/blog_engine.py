@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Automated SEO Blog Content Engine
-Built with Hermes Agent — research, generate, and publish blog posts autonomously.
+Built with AI tools — research, generate, and publish blog posts autonomously.
 
 Usage:
     python blog_engine.py --topic "Your Topic" [--keywords "kw1, kw2"] [--output output.md]
@@ -376,7 +376,7 @@ def generate_blog_post(topic: str, research: dict, keywords) -> str:
     parts.append("")
     parts.append("---")
     parts.append("")
-    parts.append(f"*This article was researched and generated using the Automated SEO Blog Content Engine built with [Hermes Agent](https://hermes-agent.nousresearch.com).*")
+    parts.append(f"*This article was researched and generated using the Automated SEO Blog Content Engine.*")
     parts.append("")
 
     return "\n".join(parts)
