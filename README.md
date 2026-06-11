@@ -10,9 +10,7 @@
 | **Lead Enrichment Tool** | Automated company research for sales | ✅ Built & Demo'ed | Sales teams, recruiters |
 | **Invoice Extractor** | Automated invoice data extraction | ✅ Built & Demo'ed | Accounting firms, bookkeepers |
 
-**Phase 1 target:** $10k in agency revenue
-**Phase 2 target:** $50k-200k in product revenue
-**Phase 3 target:** $1M ARR
+**Mission:** Automate business workflows — from content generation to lead enrichment to invoice processing.
 
 ## Directory Structure
 
