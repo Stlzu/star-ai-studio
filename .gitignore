@@ -1,0 +1,20 @@
+# Logs
+*.log
+*.log.*
+
+# Large binary media
+demos/*.mp4
+demos/*.mov
+demos/*.webm
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.swp
+
+# Environment
+.env
+*.env.local
