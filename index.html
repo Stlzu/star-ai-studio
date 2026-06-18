@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star AI Studio — AI Automation for Small Business</title>
+  <meta name="description" content="Star AI Studio builds AI agents that automate your small business — SEO content, lead enrichment, and invoice processing. No code required." />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --accent: #2563eb; --accent-soft: #dbeafe; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', system-ui, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    @media (prefers-color-scheme: dark) {
+      :root { --accent: #60a5fa; --accent-soft: #1e3a5f; }
+    }
+  </style>
+</head>
+<body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+  <!-- Nav -->
+  <nav class="fixed top-0 inset-x-0 z-50 h-16 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto px-5 h-full flex items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-tight">Star AI Studio</a>
+      <div class="hidden sm:flex items-center gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <a href="#products" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Products</a>
+        <a href="#how-it-works" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">How It Works</a>
+        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
+        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
+          <i class="ph-duotone ph-github-logo text-sm"></i> GitHub
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="sm:hidden p-2 -mr-2" aria-label="Menu">
+        <i class="ph-duotone ph-list text-2xl"></i>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="sm:hidden hidden px-5 pb-4 bg-white dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800">
+      <div class="flex flex-col gap-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <a href="#products" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Products</a>
+        <a href="#how-it-works" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">How It Works</a>
+        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
+        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-100">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-[100dvh] flex items-center pt-16">
+    <div class="max-w-6xl mx-auto px-5 w-full">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 text-xs font-medium mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+          AI automation for small businesses
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter leading-none mb-5">
+          Your business runs on data.<br />
+          Let AI <span class="text-blue-500">handle the busywork</span>.
+        </h1>
+        <p class="text-base sm:text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-[65ch] mb-8">
+          Three purpose-built AI agents that plug into your workflow, not the other way around. No coding, no complex setup, no monthly commitment.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#products" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-all active:scale-[0.98]">
+            Explore products
+            <i class="ph-duotone ph-arrow-right text-sm"></i>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all active:scale-[0.98]">
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="py-12 border-t border-zinc-100 dark:border-zinc-800/60">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.15em] mb-5 text-center">Built with</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 text-zinc-300 dark:text-zinc-700">
+        <img src="https://cdn.simpleicons.org/python/current" alt="Python" class="h-5 opacity-50 dark:opacity-40" />
+        <img src="https://cdn.simpleicons.org/playwright/current" alt="Playwright" class="h-5 opacity-50 dark:opacity-40" />
+        <img src="https://cdn.simpleicons.org/openai/current" alt="OpenAI" class="h-5 opacity-50 dark:opacity-40" />
+        <img src="https://cdn.simpleicons.org/github/current" alt="GitHub" class="h-5 opacity-50 dark:opacity-40" />
+        <img src="https://cdn.simpleicons.org/tailwindcss/current" alt="Tailwind" class="h-5 opacity-50 dark:opacity-40" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="max-w-2xl mb-16">
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Three agents, three workflows</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">Each one handles a specific business task you&rsquo;re probably doing manually. Pick one, try it, keep what works.</p>
+      </div>
+
+      <div class="grid gap-8">
+        <!-- SEO Blog Engine -->
+        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400">
+                <i class="ph-duotone ph-pen-nib text-sm"></i>
+              </span>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 01</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">SEO Blog Engine</h3>
+            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Generates well-researched, SEO-optimized blog posts from a single keyword. No more staring at empty Google Docs.
+            </p>
+            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> Keyword research with search intent parsing</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> 1500&ndash;2500 word posts with structured headings</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> Auto-export to Markdown &mdash; copy into WordPress, Ghost, or any CMS</li>
+            </ul>
+          </div>
+          <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+            <video controls playsinline preload="metadata" class="w-full h-full object-cover" poster="">
+              <source src="demos/seo-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+        <!-- Lead Enrichment Tool -->
+        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
+          <div class="order-2 sm:order-1 relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+            <video controls playsinline preload="metadata" class="w-full h-full object-cover">
+              <source src="demos/lead-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="order-1 sm:order-2">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400">
+                <i class="ph-duotone ph-users-three text-sm"></i>
+              </span>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 02</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">Lead Enrichment Tool</h3>
+            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Turn a list of company names into enriched prospect profiles with decision-maker contacts, tech stack, and funding data.
+            </p>
+            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> CSV/Google Sheets input &mdash; 50 rows in under 2 minutes</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> Enriched output: emails, LinkedIn URLs, company size, industry</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> Ready for import into your CRM or outreach tool</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Invoice Extractor -->
+        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400">
+                <i class="ph-duotone ph-file-text text-sm"></i>
+              </span>
+              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 03</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">Invoice Extractor</h3>
+            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
+              Upload or forward any invoice PDF or image. The AI extracts line items, totals, dates, and vendor info into a clean spreadsheet.
+            </p>
+            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Supports PDF, JPG, PNG &mdash; even phone photos of receipts</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Extracts line items, tax, totals, vendor, date, invoice number</li>
+              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Exports to CSV for QuickBooks, Xero, or Google Sheets</li>
+            </ul>
+          </div>
+          <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
+            <video controls playsinline preload="metadata" class="w-full h-full object-cover">
+              <source src="demos/invoice-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 sm:py-28 bg-zinc-50 dark:bg-zinc-900/40">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="max-w-2xl mb-16">
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">How it works</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">No monthly subscriptions. No sales calls. Just pick an agent, describe your task, and get results.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-sm font-semibold mb-4">01</span>
+          <h3 class="font-semibold mb-2">Choose an agent</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">SEO blog writer, lead enrichment, or invoice extraction. Pick the one that saves you the most time today.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-sm font-semibold mb-4">02</span>
+          <h3 class="font-semibold mb-2">Upload or describe</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Paste a keyword, upload a CSV of company names, or forward an invoice PDF. The agent takes it from there.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 text-sm font-semibold mb-4">03</span>
+          <h3 class="font-semibold mb-2">Export & use</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Download a Markdown blog post, enriched CSV, or structured invoice data. Import into your existing tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases (social proof-style) -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="max-w-2xl mb-16">
+        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Built for real workflows</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">Each agent came from a specific problem we saw small business owners face. No feature bloat, just what works.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40">
+          <i class="ph-duotone ph-chart-bar text-2xl text-blue-500 mb-3 block"></i>
+          <h3 class="font-semibold text-sm mb-2">Content marketing</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Freelancers and agencies who need consistent blog content but can&rsquo;t afford a dedicated writer.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/40">
+          <i class="ph-duotone ph-target text-2xl text-emerald-500 mb-3 block"></i>
+          <h3 class="font-semibold text-sm mb-2">Sales prospecting</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Founders and SDRs who need enriched lead lists but can&rsquo;t justify $10k/year on Apollo or ZoomInfo.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-violet-50 dark:bg-violet-950/30 border border-violet-100 dark:border-violet-900/40">
+          <i class="ph-duotone ph-calculator text-2xl text-violet-500 mb-3 block"></i>
+          <h3 class="font-semibold text-sm mb-2">Bookkeeping</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Small teams drowning in paper invoices who need a quick way to digitize vendor records.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 sm:py-28 border-t border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Want to try an agent?</h2>
+      <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-[55ch] mx-auto mb-8">
+        No signup, no onboarding call. Tell me which agent you need, and I&rsquo;ll run it for you. Pay only for what works.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="mailto:Dstarlight851@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-all active:scale-[0.98] shadow-sm">
+          <i class="ph-duotone ph-envelope text-sm"></i>
+          Send an email
+        </a>
+        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all active:scale-[0.98]">
+          <i class="ph-duotone ph-github-logo text-sm"></i>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-zinc-100 dark:border-zinc-800/60">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-400 dark:text-zinc-500">
+      <span>&copy; 2026 Star AI Studio. Built by Stlzu.</span>
+      <div class="flex items-center gap-4">
+        <a href="mailto:Dstarlight851@gmail.com" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Email</a>
+        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -2,10 +2,10 @@
 *.log
 *.log.*
 
-# Large binary media
-demos/*.mp4
-demos/*.mov
-demos/*.webm
+# Large binary media — commented out for landing page deployment
+# demos/*.mp4
+# demos/*.mov
+# demos/*.webm
 
 # OS files
 .DS_Store
