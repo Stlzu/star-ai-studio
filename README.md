@@ -1,6 +1,6 @@
-# DataForge SG — Web Scraping &amp; Data Extraction
+# DataForge — Web Scraping &amp; Data Extraction
 
-**Singapore-based web scraping service.** Turn any website into clean, structured CSV or Excel data.
+**Web scraping service.** Turn any website into clean, structured CSV or Excel data.
 
 ## What I Do
 
