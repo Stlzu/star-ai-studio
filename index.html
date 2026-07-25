@@ -3,231 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Star AI Studio — AI Automation for Small Business</title>
-  <meta name="description" content="Star AI Studio builds AI agents that automate your small business — document Q&A, SEO content, invoice processing, and custom web scraping. No code required." />
+  <title>DataForge SG — Web Scraping &amp; Data Extraction Services</title>
+  <meta name="description" content="Professional web scraping and data extraction services in Singapore. Turn any website into clean CSV or Excel data. PropertyGuru, e-commerce, Google Maps, and more." />
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root { --accent: #2563eb; --accent-soft: #dbeafe; }
+    :root { --accent: #ea580c; --accent-soft: #fff7ed; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Outfit', system-ui, sans-serif; }
-    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
     @media (prefers-color-scheme: dark) {
-      :root { --accent: #60a5fa; --accent-soft: #1e3a5f; }
+      :root { --accent: #fb923c; --accent-soft: #1a0e00; }
     }
   </style>
 </head>
 <body class="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased">
+
   <!-- Nav -->
   <nav class="fixed top-0 inset-x-0 z-50 h-16 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
     <div class="max-w-6xl mx-auto px-5 h-full flex items-center justify-between">
-      <a href="#" class="text-lg font-semibold tracking-tight">Star AI Studio</a>
+      <a href="#" class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white text-sm font-bold">D</span>
+        <span class="text-lg font-semibold tracking-tight">DataForge <span class="text-orange-500">SG</span></span>
+      </a>
       <div class="hidden sm:flex items-center gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-        <a href="#products" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Products</a>
+        <a href="#services" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Services</a>
         <a href="#how-it-works" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">How It Works</a>
-        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
-        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors">
-          <i class="ph-duotone ph-github-logo text-sm"></i> GitHub
-        </a>
+        <a href="#portfolio" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Portfolio</a>
+        <a href="#pricing" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Pricing</a>
+        <a href="#contact" class="px-4 py-2 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-all">Get a Quote</a>
       </div>
       <button id="mobile-menu-btn" class="sm:hidden p-2 -mr-2" aria-label="Menu">
         <i class="ph-duotone ph-list text-2xl"></i>
       </button>
     </div>
-    <!-- Mobile menu -->
     <div id="mobile-menu" class="sm:hidden hidden px-5 pb-4 bg-white dark:bg-zinc-950 border-b border-zinc-200 dark:border-zinc-800">
       <div class="flex flex-col gap-3 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-        <a href="#products" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Products</a>
+        <a href="#services" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Services</a>
         <a href="#how-it-works" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">How It Works</a>
-        <a href="#contact" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
-        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="flex items-center gap-1.5 text-zinc-900 dark:text-zinc-100">GitHub</a>
+        <a href="#portfolio" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Portfolio</a>
+        <a href="#pricing" class="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Pricing</a>
+        <a href="#contact" class="text-orange-500 font-semibold">Get a Quote</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="min-h-[100dvh] flex items-center pt-16">
+  <section class="min-h-[90dvh] flex items-center pt-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-amber-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 -z-10"></div>
     <div class="max-w-6xl mx-auto px-5 w-full">
-      <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 text-xs font-medium mb-6">
-          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-          AI automation for small businesses
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-medium mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+            Singapore-based data extraction service
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-none mb-5">
+            Turn any website into<br/>
+            <span class="text-orange-500">clean, structured data</span>
+          </h1>
+          <p class="text-base sm:text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-[55ch] mb-8">
+            Stop copying and pasting. I extract data from any website — including Cloudflare-protected sites, login-required pages, and infinite-scroll SPAs — and deliver it as CSV or Excel.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-all active:scale-[0.98] shadow-lg shadow-orange-200 dark:shadow-orange-900/30">
+              Get a Free Quote
+              <i class="ph-duotone ph-arrow-right text-sm"></i>
+            </a>
+            <a href="#portfolio" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all">
+              View Portfolio
+            </a>
+          </div>
+          <div class="flex items-center gap-6 mt-8 text-sm text-zinc-400 dark:text-zinc-500">
+            <span class="flex items-center gap-1.5"><i class="ph-duotone ph-check-circle text-orange-500 text-base"></i> 1-3 day delivery</span>
+            <span class="flex items-center gap-1.5"><i class="ph-duotone ph-check-circle text-orange-500 text-base"></i> Free assessment</span>
+            <span class="flex items-center gap-1.5"><i class="ph-duotone ph-check-circle text-orange-500 text-base"></i> CSV or Excel</span>
+          </div>
         </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter leading-none mb-5">
-          Your business runs on data.<br />
-          Let AI <span class="text-blue-500">handle the busywork</span>.
-        </h1>
-        <p class="text-base sm:text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-[65ch] mb-8">
-          Three purpose-built AI agents that plug into your workflow, not the other way around. No coding, no complex setup, no monthly commitment.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#products" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-300 transition-all active:scale-[0.98]">
-            Explore products
-            <i class="ph-duotone ph-arrow-right text-sm"></i>
-          </a>
-          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-all active:scale-[0.98]">
-            Get in touch
-          </a>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/20 dark:to-amber-900/20 border border-orange-200 dark:border-orange-800/30 flex items-center justify-center p-8">
+            <div class="text-center">
+              <i class="ph-duotone ph-database text-7xl text-orange-400 mb-4 block"></i>
+              <p class="text-sm text-zinc-500 dark:text-zinc-400 max-w-xs mx-auto">Data visualization preview — sample of extracted PropertyGuru listings</p>
+              <!-- Sample data preview -->
+              <div class="mt-6 grid grid-cols-3 gap-2 text-left text-xs font-mono">
+                <div class="bg-white/80 dark:bg-zinc-800/80 rounded-lg p-2">
+                  <span class="text-orange-500 font-semibold">S$998K</span>
+                  <p class="text-zinc-400">3BR HDB</p>
+                  <p class="text-zinc-500">1,001 sqft</p>
+                </div>
+                <div class="bg-white/80 dark:bg-zinc-800/80 rounded-lg p-2">
+                  <span class="text-orange-500 font-semibold">S$10M</span>
+                  <p class="text-zinc-400">4BR Condo</p>
+                  <p class="text-zinc-500">3,756 sqft</p>
+                </div>
+                <div class="bg-white/80 dark:bg-zinc-800/80 rounded-lg p-2">
+                  <span class="text-orange-500 font-semibold">S$500K</span>
+                  <p class="text-zinc-400">2BR HDB</p>
+                  <p class="text-zinc-500">689 sqft</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Social proof -->
-  <section class="py-12 border-t border-zinc-100 dark:border-zinc-800/60">
+  <!-- Stats -->
+  <section class="py-12 border-y border-zinc-100 dark:border-zinc-800/60">
     <div class="max-w-6xl mx-auto px-5">
-      <p class="text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.15em] mb-5 text-center">Built with</p>
-      <div class="flex flex-wrap items-center justify-center gap-8 text-zinc-300 dark:text-zinc-700">
-        <img src="https://cdn.simpleicons.org/python/current" alt="Python" class="h-5 opacity-50 dark:opacity-40" />
-        <img src="https://cdn.simpleicons.org/playwright/current" alt="Playwright" class="h-5 opacity-50 dark:opacity-40" />
-        <img src="https://cdn.simpleicons.org/openai/current" alt="OpenAI" class="h-5 opacity-50 dark:opacity-40" />
-        <img src="https://cdn.simpleicons.org/github/current" alt="GitHub" class="h-5 opacity-50 dark:opacity-40" />
-        <img src="https://cdn.simpleicons.org/tailwindcss/current" alt="Tailwind" class="h-5 opacity-50 dark:opacity-40" />
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-orange-500">100+</div>
+          <div class="text-sm text-zinc-400 mt-1">Data points scraped</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-orange-500">1-3</div>
+          <div class="text-sm text-zinc-400 mt-1">Day turnaround</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-orange-500">5+</div>
+          <div class="text-sm text-zinc-400 mt-1">Anti-bot techniques</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-orange-500">100%</div>
+          <div class="text-sm text-zinc-400 mt-1">CSV/Excel delivery</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
-  <section id="products" class="py-20 sm:py-28">
+  <!-- Services -->
+  <section id="services" class="py-20 sm:py-28">
     <div class="max-w-6xl mx-auto px-5">
       <div class="max-w-2xl mb-16">
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Four services, zero busywork</h2>
-        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">AI agents for content, documents, invoices — plus custom data extraction from any website. Pick what you need today.</p>
+        <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">What I Do</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">Web scraping for every need</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">I build custom scrapers for any publicly available website. Here are the most common use cases:</p>
       </div>
-
-      <div class="grid gap-8">
-        <!-- SEO Blog Engine -->
-        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
-          <div>
-            <div class="flex items-center gap-2 mb-3">
-              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400">
-                <i class="ph-duotone ph-pen-nib text-sm"></i>
-              </span>
-              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 01</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">SEO Blog Engine</h3>
-            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-              Generates well-researched, SEO-optimized blog posts from a single keyword. No more staring at empty Google Docs.
-            </p>
-            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> Keyword research with search intent parsing</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> 1500&ndash;2500 word posts with structured headings</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-sm"></i> Auto-export to Markdown &mdash; copy into WordPress, Ghost, or any CMS</li>
-            </ul>
-            <div class="mt-5 flex items-center gap-3">
-              <span class="text-lg font-semibold">$49</span>
-              <a href="https://starlit8302.gumroad.com/l/seo-blog-engine" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-500 transition-all active:scale-[0.98]">
-                Buy on Gumroad <i class="ph-duotone ph-arrow-right text-xs"></i>
-              </a>
-            </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-buildings text-2xl text-orange-500"></i>
           </div>
-          <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-            <video controls playsinline preload="metadata" class="w-full h-full object-cover" poster="">
-              <source src="demos/seo-demo.mp4" type="video/mp4" />
-            </video>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">Real Estate</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">PropertyGuru, 99.co, SRX — extract prices, floor area, bedrooms, MRT distance, tenure, and agent details.</p>
         </div>
-
-        <!-- LocalDoc -->
-        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
-          <div class="order-2 sm:order-1 relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-            <video controls playsinline preload="metadata" class="w-full h-full object-cover">
-              <source src="demos/lead-demo.mp4" type="video/mp4" />
-            </video>
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-shopping-cart text-2xl text-orange-500"></i>
           </div>
-          <div class="order-1 sm:order-2">
-            <div class="flex items-center gap-2 mb-3">
-              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400">
-                <i class="ph-duotone ph-file-search text-sm"></i>
-              </span>
-              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 02</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">LocalDoc</h3>
-            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-              Chat with your documents — PDFs, Word files, and more. Ask questions, get answers, and let AI do the reading for you.
-            </p>
-            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> Drop any PDF or DOCX &mdash; ask questions in natural language</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> Runs 100% locally on your Mac &mdash; no data leaves your machine</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-sm"></i> Built with local LLMs &mdash; no API costs, no subscription</li>
-            </ul>
-            <div class="mt-5 flex items-center gap-3">
-              <span class="text-lg font-semibold">$39</span>
-              <a href="https://starlit8302.gumroad.com/l/localdoc" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-600 text-white text-sm font-medium hover:bg-emerald-500 transition-all active:scale-[0.98]">
-                Buy on Gumroad <i class="ph-duotone ph-arrow-right text-xs"></i>
-              </a>
-            </div>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">E-Commerce</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Product prices, stock levels, reviews, and seller data from Shopee, Lazada, Amazon, and more.</p>
         </div>
-
-        <!-- Invoice Extractor -->
-        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
-          <div>
-            <div class="flex items-center gap-2 mb-3">
-              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400">
-                <i class="ph-duotone ph-file-text text-sm"></i>
-              </span>
-              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Agent 03</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">Invoice Extractor</h3>
-            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-              Upload or forward any invoice PDF or image. The AI extracts line items, totals, dates, and vendor info into a clean spreadsheet.
-            </p>
-            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Supports PDF, JPG, PNG &mdash; even phone photos of receipts</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Extracts line items, tax, totals, vendor, date, invoice number</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-sm"></i> Exports to CSV for QuickBooks, Xero, or Google Sheets</li>
-            </ul>
-            <div class="mt-5 flex items-center gap-3">
-              <span class="text-lg font-semibold">$47</span>
-              <a href="https://starlit8302.gumroad.com/l/invoice-extractor-pro" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-violet-600 text-white text-sm font-medium hover:bg-violet-500 transition-all active:scale-[0.98]">
-                Buy on Gumroad <i class="ph-duotone ph-arrow-right text-xs"></i>
-              </a>
-            </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-map-pin text-2xl text-orange-500"></i>
           </div>
-          <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-            <video controls playsinline preload="metadata" class="w-full h-full object-cover">
-              <source src="demos/invoice-demo.mp4" type="video/mp4" />
-            </video>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">Google Maps</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Business names, addresses, phone numbers, reviews, ratings, and categories — for lead generation or market research.</p>
         </div>
-
-        <!-- Web Scraping -->
-        <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-center p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60">
-          <div>
-            <div class="flex items-center gap-2 mb-3">
-              <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400">
-                <i class="ph-duotone ph-spider-web text-sm"></i>
-              </span>
-              <span class="text-xs font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-wider">Service 04</span>
-            </div>
-            <h3 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-3">Web Scraping &amp; Data Extraction</h3>
-            <p class="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">
-              Need data from a website but copying and pasting is too slow? I&rsquo;ll build a custom scraper to extract exactly what you need — clean, structured, delivered fast.
-            </p>
-            <ul class="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-sm"></i> E-commerce prices, product data, inventory tracking</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-sm"></i> Real estate listings, business directories, Google Maps</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-sm"></i> Cloudflare bypass, login auth, infinite scroll &mdash; handled</li>
-              <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-sm"></i> Delivered as CSV or Excel &mdash; 1&ndash;3 day turnaround</li>
-            </ul>
-            <div class="mt-5 flex items-center gap-3">
-              <span class="text-lg font-semibold">$150</span>
-              <span class="text-sm text-zinc-400">starting price</span>
-              <a href="#contact" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-orange-600 text-white text-sm font-medium hover:bg-orange-500 transition-all active:scale-[0.98]">
-                Get a quote <i class="ph-duotone ph-arrow-right text-xs"></i>
-              </a>
-            </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-shield-check text-2xl text-orange-500"></i>
           </div>
-          <div class="relative aspect-video rounded-xl overflow-hidden bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center">
-            <div class="text-center p-8">
-              <i class="ph-duotone ph-spider-web text-5xl text-orange-400 mb-3 block"></i>
-              <p class="text-sm text-zinc-400 dark:text-zinc-500">Web scraping demo video coming soon</p>
-            </div>
+          <h3 class="font-semibold text-lg mb-2">Anti-Bot Bypass</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Cloudflare, DataDome, PerimeterX, Akamai — I have working bypasses for all major bot protection systems.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-lock-open text-2xl text-orange-500"></i>
           </div>
+          <h3 class="font-semibold text-lg mb-2">Login-Auth Scraping</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Need data behind a login? I handle session management, cookie rotation, and authenticated scraping.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:shadow-lg hover:border-orange-200 dark:hover:border-orange-800 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+            <i class="ph-duotone ph-file-code text-2xl text-orange-500"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Custom Scripts</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Any website, any format. Tell me what you need and I'll build a maintainable Python scraper for you.</p>
         </div>
       </div>
     </div>
@@ -237,179 +195,263 @@
   <section id="how-it-works" class="py-20 sm:py-28 bg-zinc-50 dark:bg-zinc-900/40">
     <div class="max-w-6xl mx-auto px-5">
       <div class="max-w-2xl mb-16">
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">How it works</h2>
-        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">No monthly subscriptions. No sales calls. Just pick an agent, describe your task, and get results.</p>
+        <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">Simple Process</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">How it works</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">Three simple steps from request to delivery.</p>
       </div>
-
       <div class="grid sm:grid-cols-3 gap-8">
-        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
-          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-sm font-semibold mb-4">01</span>
-          <h3 class="font-semibold mb-2">Choose a service</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">SEO blog writer, document Q&A, invoice extraction, or web scraping. Pick the one that saves you the most time today.</p>
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative">
+          <div class="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold shadow-lg">1</div>
+          <div class="mt-4">
+            <i class="ph-duotone ph-chat-circle-text text-3xl text-orange-500 mb-4 block"></i>
+            <h3 class="font-semibold text-lg mb-2">Send me the link</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Email me the website URL and describe what data you need. I'll assess feasibility and give you a fixed price — free.</p>
+          </div>
         </div>
-        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
-          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-sm font-semibold mb-4">02</span>
-          <h3 class="font-semibold mb-2">Upload or describe</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Paste a keyword, upload a CSV of company names, or forward an invoice PDF. The agent takes it from there.</p>
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative">
+          <div class="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold shadow-lg">2</div>
+          <div class="mt-4">
+            <i class="ph-duotone ph-code text-3xl text-orange-500 mb-4 block"></i>
+            <h3 class="font-semibold text-lg mb-2">I build &amp; extract</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">I write a custom scraper for your target site, handle anti-bot measures, and extract the data you need — typically 1-3 days.</p>
+          </div>
         </div>
-        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
-          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 text-sm font-semibold mb-4">03</span>
-          <h3 class="font-semibold mb-2">Export & use</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Download a Markdown blog post, enriched CSV, or structured invoice data. Import into your existing tools.</p>
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 relative">
+          <div class="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-orange-500 text-white flex items-center justify-center text-sm font-bold shadow-lg">3</div>
+          <div class="mt-4">
+            <i class="ph-duotone ph-file-spreadsheet text-3xl text-orange-500 mb-4 block"></i>
+            <h3 class="font-semibold text-lg mb-2">You get your data</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Delivered as a clean CSV or Excel file. Open it in Google Sheets, Excel, or import into your CRM — ready to use.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Use cases (social proof-style) -->
-  <section class="py-20 sm:py-28">
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 sm:py-28">
     <div class="max-w-6xl mx-auto px-5">
       <div class="max-w-2xl mb-16">
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Built for real workflows</h2>
-        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">Each service came from a specific problem we saw small business owners face. No feature bloat, just what works.</p>
+        <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">Portfolio</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">Recent projects</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">Real projects I've completed. Each came with its own challenges and solutions.</p>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40">
-          <i class="ph-duotone ph-chart-bar text-2xl text-blue-500 mb-3 block"></i>
-          <h3 class="font-semibold text-sm mb-2">Content marketing</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Freelancers and agencies who need consistent blog content but can&rsquo;t afford a dedicated writer.</p>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-lg transition-all">
+          <div class="aspect-video bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/20 dark:to-amber-900/20 flex items-center justify-center">
+            <i class="ph-duotone ph-buildings text-6xl text-orange-400"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-2 py-0.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-medium">PropertyGuru</span>
+              <span class="text-xs text-zinc-400">Jul 2026</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">100+ Singapore Property Listings</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Extracted prices, floor area, bedrooms, tenure, MRT distance, and agent info from PropertyGuru. Required bypassing Cloudflare and navigating a Next.js SSR app with infinite scroll.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">Cloudflare Bypass</span>
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">Next.js SSR</span>
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">100 rows</span>
+            </div>
+          </div>
         </div>
-        <div class="p-6 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/40">
-          <i class="ph-duotone ph-target text-2xl text-emerald-500 mb-3 block"></i>
-          <h3 class="font-semibold text-sm mb-2">Sales prospecting</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Founders and SDRs who need enriched lead lists but can&rsquo;t justify $10k/year on Apollo or ZoomInfo.</p>
+        <!-- Project 2 -->
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-lg transition-all">
+          <div class="aspect-video bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/20 dark:to-amber-900/20 flex items-center justify-center">
+            <i class="ph-duotone ph-device-mobile-camera text-6xl text-orange-400"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="px-2 py-0.5 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-medium">Carousell</span>
+              <span class="text-xs text-zinc-400">Jul 2026</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">44 iPhone Listings from Carousell SG</h3>
+            <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4">Extracted product names, prices, conditions, and seller info from Carousell SG search results. Required navigating a React SPA with CSS-modules and clicking through tabbed interfaces.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">React SPA</span>
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">CSS Modules</span>
+              <span class="px-2 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-500">Tab Navigation</span>
+            </div>
+          </div>
         </div>
-        <div class="p-6 rounded-xl bg-violet-50 dark:bg-violet-950/30 border border-violet-100 dark:border-violet-900/40">
-          <i class="ph-duotone ph-calculator text-2xl text-violet-500 mb-3 block"></i>
-          <h3 class="font-semibold text-sm mb-2">Bookkeeping</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Small teams drowning in paper invoices who need a quick way to digitize vendor records.</p>
+        <!-- Project 3 -->
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-lg transition-all sm:col-span-2">
+          <div class="p-6 flex items-center gap-4">
+            <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/20 dark:to-amber-900/20 flex items-center justify-center shrink-0">
+              <i class="ph-duotone ph-question text-3xl text-orange-400"></i>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Need something specific?</h3>
+              <p class="text-sm text-zinc-500 dark:text-zinc-400">I work on custom projects too. Send me the details and I'll give you a free quote within 24 hours.</p>
+              <a href="#contact" class="inline-flex items-center gap-1 text-sm text-orange-500 font-medium mt-2 hover:text-orange-600 transition-colors">
+                Get a free quote <i class="ph-duotone ph-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="p-6 rounded-xl bg-orange-50 dark:bg-orange-950/30 border border-orange-100 dark:border-orange-900/40">
-          <i class="ph-duotone ph-magnifying-glass text-2xl text-orange-500 mb-3 block"></i>
-          <h3 class="font-semibold text-sm mb-2">Market intelligence</h3>
-          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">E-commerce sellers and analysts who need competitor pricing, product catalogs, and market data to make informed decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="py-12 bg-zinc-50 dark:bg-zinc-900/40">
+    <div class="max-w-6xl mx-auto px-5">
+      <p class="text-xs text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.15em] mb-5 text-center font-semibold">Built With</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 text-zinc-300 dark:text-zinc-700">
+        <div class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <i class="ph-duotone ph-code text-orange-500"></i> Python
+        </div>
+        <div class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <i class="ph-duotone ph-browsers text-orange-500"></i> Playwright
+        </div>
+        <div class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <i class="ph-duotone ph-shield text-orange-500"></i> curl_cffi
+        </div>
+        <div class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <i class="ph-duotone ph-robot text-orange-500"></i> Browser Automation
+        </div>
+        <div class="flex items-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <i class="ph-duotone ph-file-csv text-orange-500"></i> CSV / Excel
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="py-20 sm:py-28 border-t border-zinc-200 dark:border-zinc-800">
+  <section id="pricing" class="py-20 sm:py-28">
     <div class="max-w-6xl mx-auto px-5">
       <div class="max-w-2xl mb-16">
-        <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Simple, pay-as-you-go</h2>
-        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">No monthly subscription. No minimum. Just describe what you need and get results.</p>
+        <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">Pricing</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">Transparent, project-based</h2>
+        <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">No hidden fees, no subscriptions. You pay for the work delivered.</p>
       </div>
-      <div class="grid sm:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs"><i class="ph-duotone ph-pen-nib"></i></span>
-            <span class="text-sm font-medium">SEO Blog Engine</span>
-          </div>
+      <div class="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
           <div class="mb-5">
-            <span class="text-3xl font-semibold">$29</span>
-            <span class="text-zinc-400 text-sm"> / article</span>
+            <span class="text-xs font-semibold text-orange-500 uppercase tracking-wider">Simple</span>
+            <div class="mt-3">
+              <span class="text-4xl font-bold">$150</span>
+              <span class="text-zinc-400 text-sm ml-1">/ project</span>
+            </div>
           </div>
-          <ul class="space-y-2 text-sm text-zinc-500 dark:text-zinc-400 mb-6 flex-1">
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-xs"></i> 1500&ndash;2500 words, SEO-optimized</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-xs"></i> Keyword research + intent parsing</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-blue-500 mt-0.5 text-xs"></i> Markdown export, ready to publish</li>
+          <ul class="space-y-3 text-sm text-zinc-500 dark:text-zinc-400 mb-8 flex-1">
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> 1 target website</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Up to 5 data fields</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Up to 500 rows</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> CSV delivery</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> 3 day turnaround</li>
           </ul>
-          <a href="#contact" class="w-full text-center px-4 py-2 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-all">Try it</a>
+          <a href="#contact" class="w-full text-center px-4 py-3 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-all">Get Started</a>
         </div>
-        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 text-xs"><i class="ph-duotone ph-users-three"></i></span>
-            <span class="text-sm font-medium">LocalDoc</span>
-          </div>
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border-2 border-orange-500 dark:border-orange-400 flex flex-col relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-orange-500 text-white text-xs font-semibold">Most Popular</div>
           <div class="mb-5">
-            <span class="text-3xl font-semibold">$49</span>
-            <span class="text-zinc-400 text-sm"> / 100 leads</span>
+            <span class="text-xs font-semibold text-orange-500 uppercase tracking-wider">Standard</span>
+            <div class="mt-3">
+              <span class="text-4xl font-bold">$300</span>
+              <span class="text-zinc-400 text-sm ml-1">/ project</span>
+            </div>
           </div>
-          <ul class="space-y-2 text-sm text-zinc-500 dark:text-zinc-400 mb-6 flex-1">
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-xs"></i> Company &rarr; decision-maker contacts</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-xs"></i> Tech stack, funding, industry data</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-emerald-500 mt-0.5 text-xs"></i> CSV export, CRM-ready</li>
+          <ul class="space-y-3 text-sm text-zinc-500 dark:text-zinc-400 mb-8 flex-1">
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> 1-2 target websites</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Up to 15 data fields</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Up to 5,000 rows</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> CSV or Excel delivery</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Anti-bot bypass included</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> 2 day turnaround</li>
           </ul>
-          <a href="#contact" class="w-full text-center px-4 py-2 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-all">Try it</a>
+          <a href="#contact" class="w-full text-center px-4 py-3 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-all">Get Started</a>
         </div>
-        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 text-xs"><i class="ph-duotone ph-file-text"></i></span>
-            <span class="text-sm font-medium">Invoice Extractor</span>
-          </div>
+        <div class="p-8 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
           <div class="mb-5">
-            <span class="text-3xl font-semibold">$19</span>
-            <span class="text-zinc-400 text-sm"> / month</span>
+            <span class="text-xs font-semibold text-orange-500 uppercase tracking-wider">Complex</span>
+            <div class="mt-3">
+              <span class="text-4xl font-bold">$500+</span>
+              <span class="text-zinc-400 text-sm ml-1">/ project</span>
+            </div>
           </div>
-          <ul class="space-y-2 text-sm text-zinc-500 dark:text-zinc-400 mb-6 flex-1">
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-xs"></i> Up to 50 invoices/month</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-xs"></i> PDF, JPG, PNG &mdash; even phone photos</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-violet-500 mt-0.5 text-xs"></i> CSV export for QuickBooks, Xero</li>
+          <ul class="space-y-3 text-sm text-zinc-500 dark:text-zinc-400 mb-8 flex-1">
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Multiple websites</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Unlimited data fields</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Unlimited rows</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> CSV, Excel, or API delivery</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> Hard anti-bot bypass</li>
+            <li class="flex items-start gap-2.5"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-base"></i> 1-3 day turnaround</li>
           </ul>
-          <a href="#contact" class="w-full text-center px-4 py-2 rounded-full bg-violet-500 text-white text-sm font-medium hover:bg-violet-600 transition-all">Try it</a>
-        </div>
-        <div class="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col">
-          <div class="flex items-center gap-2 mb-4">
-            <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400 text-xs"><i class="ph-duotone ph-spider-web"></i></span>
-            <span class="text-sm font-medium">Web Scraping</span>
-          </div>
-          <div class="mb-5">
-            <span class="text-3xl font-semibold">$150</span>
-            <span class="text-zinc-400 text-sm"> / project</span>
-          </div>
-          <ul class="space-y-2 text-sm text-zinc-500 dark:text-zinc-400 mb-6 flex-1">
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-xs"></i> Custom scraper built for your target site</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-xs"></i> Anti-bot bypass included</li>
-            <li class="flex items-start gap-2"><i class="ph-duotone ph-check-circle text-orange-500 mt-0.5 text-xs"></i> Clean CSV / Excel delivery</li>
-          </ul>
-          <a href="#contact" class="w-full text-center px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-medium hover:bg-orange-600 transition-all">Get a quote</a>
+          <a href="#contact" class="w-full text-center px-4 py-3 rounded-full border border-orange-500 text-orange-500 text-sm font-semibold hover:bg-orange-50 dark:hover:bg-orange-950/30 transition-all">Contact Me</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA / Contact Form -->
-  <section id="contact" class="py-20 sm:py-28 border-t border-zinc-200 dark:border-zinc-800">
+  <!-- FAQ -->
+  <section id="faq" class="py-20 sm:py-28 bg-zinc-50 dark:bg-zinc-900/40">
+    <div class="max-w-3xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">FAQ</span>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">Frequently asked questions</h2>
+      </div>
+      <div class="space-y-4">
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-semibold mb-2">Is web scraping legal?</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Yes, scraping publicly available data is legal. I only extract data that is publicly accessible — I do not bypass authentication, access private data, or violate terms of service that prohibit automated access. Each project is assessed individually.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-semibold mb-2">What if the site blocks me?</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">I have experience bypassing Cloudflare, DataDome, Akamai, and other anti-bot systems. If a site proves impossible to scrape, I'll tell you upfront — no charge.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-semibold mb-2">What format do I get the data in?</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">CSV (.csv) or Excel (.xlsx). You can open it directly in Excel, Google Sheets, or Apple Numbers. For ongoing projects, I can also set up a recurring data feed.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-semibold mb-2">How long does it take?</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Most projects take 1-3 days. Simple scrapers can be done in a few hours. Complex projects with heavy anti-bot protection may take up to a week.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+          <h3 class="font-semibold mb-2">Do you offer recurring data collection?</h3>
+          <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">Yes! I can set up scheduled scrapers that deliver fresh data daily, weekly, or monthly. Contact me for recurring pricing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="py-20 sm:py-28">
     <div class="max-w-3xl mx-auto px-5 text-center">
-      <h2 class="text-3xl sm:text-4xl font-semibold tracking-tighter mb-4">Want to try an agent?</h2>
+      <span class="text-xs font-semibold text-orange-500 uppercase tracking-widest">Get Started</span>
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tighter mt-3 mb-4">Ready to get your data?</h2>
       <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-[55ch] mx-auto mb-10">
-        No signup, no onboarding call. Tell me which agent you need and describe your task. I&rsquo;ll run it for you. Pay only if you&rsquo;re happy.
+        Send me the website link and describe what data you need. I'll reply with a feasibility assessment and fixed price — usually within 24 hours.
       </p>
       <form action="https://formsubmit.co/star.ai.studio@gmail.com" method="POST" class="max-w-xl mx-auto text-left">
-        <input type="hidden" name="_subject" value="New Star AI Studio inquiry">
-        <input type="hidden" name="_next" value="https://stlzu.github.io/star-ai-studio/">
-        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New DataForge SG inquiry" />
+        <input type="hidden" name="_next" value="https://stlzu.github.io/star-ai-studio/" />
+        <input type="hidden" name="_captcha" value="false" />
         <div class="grid sm:grid-cols-2 gap-4 mb-4">
           <div>
             <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="name">Your name</label>
-            <input type="text" name="name" id="name" required placeholder="e.g. Jane Smith" class="w-full px-4 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all">
+            <input type="text" name="name" id="name" required placeholder="e.g. Jane Smith" class="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500 transition-all" />
           </div>
           <div>
             <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="email">Your email</label>
-            <input type="email" name="email" id="email" required placeholder="jane@company.com" class="w-full px-4 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all">
+            <input type="email" name="email" id="email" required placeholder="jane@company.com" class="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500 transition-all" />
           </div>
         </div>
         <div class="mb-4">
-          <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="product">Which agent?</label>
-          <select name="product" id="product" required class="w-full px-4 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all">
-            <option value="">&mdash; Select a product &mdash;</option>
-            <option value="seo-blog-engine">SEO Blog Engine</option>
-            <option value="localdoc">LocalDoc</option>
-            <option value="invoice-extractor">Invoice Extractor</option>
-            <option value="web-scraping">Web Scraping &amp; Data Extraction</option>
-            <option value="not-sure">Not sure &mdash; help me decide</option>
-          </select>
+          <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="website">Target website URL</label>
+          <input type="url" name="website" id="website" required placeholder="https://example.com/page-to-scrape" class="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500 transition-all" />
         </div>
         <div class="mb-5">
-          <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="message">Describe your task</label>
-          <textarea name="message" id="message" rows="3" required placeholder="e.g. I need a blog post about 'small business AI tools' for my consulting website..." class="w-full px-4 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 transition-all resize-none"></textarea>
+          <label class="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-1.5" for="message">What data do you need?</label>
+          <textarea name="message" id="message" rows="4" required placeholder="e.g. I need all property listings from this search page — price, address, bedrooms, square footage, and agent name. About 200 listings." class="w-full px-4 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500 transition-all resize-none"></textarea>
         </div>
-        <button type="submit" class="w-full px-6 py-3 rounded-full bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-all active:scale-[0.98] shadow-sm flex items-center justify-center gap-2">
+        <button type="submit" class="w-full px-6 py-3.5 rounded-full bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-all active:scale-[0.98] shadow-lg shadow-orange-200 dark:shadow-orange-900/30 flex items-center justify-center gap-2">
           <i class="ph-duotone ph-paper-plane-right text-sm"></i>
-          Send inquiry
+          Send Inquiry — Free Assessment
         </button>
-        <p class="text-xs text-zinc-400 dark:text-zinc-500 text-center mt-3">I&rsquo;ll respond within 24 hours. No spam, no sales calls.</p>
+        <p class="text-xs text-zinc-400 dark:text-zinc-500 text-center mt-3">I'll respond within 24 hours. No spam, no obligations.</p>
       </form>
     </div>
   </section>
@@ -417,10 +459,11 @@
   <!-- Footer -->
   <footer class="py-10 border-t border-zinc-100 dark:border-zinc-800/60">
     <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-400 dark:text-zinc-500">
-      <span>&copy; 2026 Star AI Studio. Built by Stlzu.</span>
+      <span>&copy; 2026 DataForge SG. A service by Star AI Studio.</span>
       <div class="flex items-center gap-4">
-        <a href="mailto:star.ai.studio@gmail.com" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Email</a>
-        <a href="https://github.com/Stlzu/star-ai-studio" target="_blank" rel="noopener" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">GitHub</a>
+        <a href="mailto:star.ai.studio@gmail.com" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors flex items-center gap-1.5">
+          <i class="ph-duotone ph-envelope text-orange-500"></i> star.ai.studio@gmail.com
+        </a>
       </div>
     </div>
   </footer>
