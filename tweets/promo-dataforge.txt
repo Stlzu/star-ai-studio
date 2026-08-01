@@ -1,0 +1,8 @@
+{
+  "product": "DataForge Web Scraping Service",
+  "tagline": "Turn any website into clean data",
+  "url": "https://starlit8302.gumroad.com",
+  "price": "from $200",
+  "tweet": "Stop copying and pasting data from websites by hand.\n\nI build custom scrapers that extract exactly what you need — and deliver it as clean CSV or Excel.\n\n✅ Cloudflare & anti-bot bypass\n✅ Login-required pages handled\n✅ Real estate · e-commerce · market research\n✅ 1-3 day turnaround\n✅ Singapore-based, serving clients worldwide\n\nPackages from $200:\nhttps://starlit8302.gumroad.com\n\nFree feasibility assessment — email star.ai.studio@gmail.com\n\n#WebScraping #DataExtraction #Automation",
+  "tags": "#WebScraping #DataExtraction #Automation"
+}

@@ -1,0 +1,8 @@
+{
+  "product": "DataForge Web Scraping Service",
+  "tagline": "Turn any website into clean data",
+  "url": "https://starlit8302.gumroad.com",
+  "price": "from $200",
+  "tweet": "Stop copying website data by hand.\n\nI build custom scrapers that deliver clean CSV/Excel — anti-bot bypass included.\n\nReal estate · e-commerce · market research · 1-3 day turnaround\n\nFrom $200:\nhttps://starlit8302.gumroad.com\n\n#WebScraping #DataExtraction",
+  "tags": "#WebScraping #DataExtraction"
+}
