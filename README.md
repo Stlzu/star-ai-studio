@@ -23,12 +23,12 @@ I build custom scrapers for any publicly available website. Whether it's protect
 
 ## Pricing
 
-| Tier | Price | Rows | Best For |
+| Tier | Price | Pages | Best For |
 |:-----|:----:|:----:|:---------|
-| **Simple** | $200 | Up to 500 | One-time, small dataset |
-| **Standard** | $400 | Up to 5,000 | Multi-field, anti-bot |
-| **Complex** | $800+ | Up to 10,000 | Hard anti-bot, custom needs |
-| **Custom** | Quote | 10K+ | Large-scale projects |
+| **Simple** | $200 | Up to 100 | One-time, small dataset |
+| **Standard** | $400 | Up to 300 | Multi-field, anti-bot |
+| **Complex** | $800+ | Up to 1,000 | Hard anti-bot, custom needs |
+| **Custom** | Quote | 1,000+ | Large-scale projects |
 
 ## Tech Stack
 
