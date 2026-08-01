@@ -18,8 +18,16 @@ I build custom scrapers for any publicly available website. Whether it's protect
 
 ## Portfolio
 
-- **PropertyGuru**: 100+ Singapore property listings scraped (prices, bedrooms, sqft, tenure, MRT info)
-- **Carousell SG**: 44 iPhone listings extracted (product names, prices, conditions, sellers)
+| Project | Details | Sample |
+|---------|---------|--------|
+| **PropertyGuru** | 100+ Singapore property listings — prices, bedrooms, sqft, tenure, MRT info | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/propertyguru-sample.csv) |
+| **Carousell SG** | 44 iPhone listings — product names, prices, conditions, sellers | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/carousell-sample.csv) |
+| **GrabFood** | 274 restaurants from one search — names, prices, ratings, delivery times | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/grabfood-sample.csv) |
+| **Amazon SG** | Product prices — titles, prices, ratings, availability | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/amazon-sg-sample.csv) |
+| **Google Maps** | Business listings — names, categories, ratings, addresses | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/google-maps-sample.csv) |
+| **Shopee** | 15 products (3-layer anti-bot) — titles, prices, sellers | [Download Sample CSV →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/data/shopee-sample.csv) |
+
+*All sample CSVs live in [`demos/data/`](demos/data/).*
 
 ## Pricing
 
