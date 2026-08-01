@@ -45,6 +45,28 @@ I build custom scrapers for any publicly available website. Whether it's protect
 | **Complex** | $800+ | Up to 1,000 | Hard anti-bot, custom needs |
 | **Custom** | Quote | 1,000+ | Large-scale projects |
 
+## FAQ
+
+**Is web scraping legal?**
+
+Yes, scraping publicly available data is legal. I only extract data that is publicly accessible — I do not bypass authentication, access private data, or violate terms of service that prohibit automated access. Each project is assessed individually.
+
+**What if the site blocks me?**
+
+I have experience bypassing Cloudflare, DataDome, Akamai, and other anti-bot systems. If a site proves impossible to scrape, I'll tell you upfront — no charge.
+
+**What format do I get the data in?**
+
+CSV (.csv) or Excel (.xlsx). You can open it directly in Excel, Google Sheets, or Apple Numbers. For ongoing projects, I can also set up a recurring data feed.
+
+**How long does it take?**
+
+Most projects take 1-3 days. Simple scrapers can be done in a few hours. Complex projects with heavy anti-bot protection may take up to a week.
+
+**Do you offer recurring data collection?**
+
+Yes! I can set up scheduled scrapers that deliver fresh data daily, weekly, or monthly. Contact me for recurring pricing.
+
 ## Tech Stack
 
 - **Python** — curl_cffi, Playwright, Scrapy
