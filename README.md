@@ -29,6 +29,13 @@ I build custom scrapers for any publicly available website. Whether it's protect
 
 *All sample CSVs live in [`demos/data/`](demos/data/).*
 
+### Visual Sample PDFs
+
+| Sample | File |
+|--------|------|
+| PropertyGuru | [Download Sample PDF →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/PropertyGuru-Sample-Data.pdf) |
+| Carousell | [Download Sample PDF →](https://raw.githubusercontent.com/Stlzu/star-ai-studio/main/demos/Carousell-Sample-Data.pdf) |
+
 ## Pricing
 
 | Tier | Price | Pages | Best For |
